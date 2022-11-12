@@ -1,6 +1,8 @@
 package co.edu.cue.proyectofinalcorte3;
 
 import co.edu.cue.proyectofinalcorte3.controller.LoginViewController;
+import co.edu.cue.proyectofinalcorte3.model.Client;
+import co.edu.cue.proyectofinalcorte3.model.Person;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -10,7 +12,10 @@ import javafx.stage.Stage;
 import org.kordamp.bootstrapfx.BootstrapFX;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class HelloApplication extends Application {
     private Stage stage;
@@ -33,6 +38,7 @@ public class HelloApplication extends Application {
         } catch(Exception e) {
             e.printStackTrace();
         }
+
     }
 
     public static void main(String[] args) {
